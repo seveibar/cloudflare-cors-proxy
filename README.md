@@ -2,7 +2,7 @@
 
 A simple CORS proxy that can easily be uploaded as a Cloudflare Worker.
 
-The worker proxies a request through the cloudflare worker. This allows you to get around CORS restrictions in browsers,
+The worker proxies a request through a cloudflare worker. This allows you to get around CORS restrictions in browsers,
 without changing the CORS settings of a server.
 
 > Because CORS proxies are often used for nefarious things, of which I would not like to be a part of, I won't post a
