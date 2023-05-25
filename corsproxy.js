@@ -6,7 +6,7 @@ async function handleRequest(request) {
   // that this request isn't cross-site.
   request = new Request(apiurl, request)
   request.headers.set('Origin', new URL(apiurl).origin)
-  let response = await fetch(request)
+  let response = await fetch(request, {redirect: 'follow'})
   // Recreate the response so we can modify the headers
   response = new Response(response.body, response)
   // Set CORS headers
